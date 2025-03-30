@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Paleta de morados */
+:root {
+    --morado-oscuro: #6a0dad;
+    --morado-principal: #8a2be2;
+    --morado-claro: #b19cd9;
+    --morado-suave: #e6e6fa;
+    --morado-hover: #9370db;
+}
+
+/* Estilos del encabezado */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(106, 13, 173, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+    border-bottom: 2px solid var(--morado-suave);
+}
+
+/* Logo */
+.logo img {
+    height: 60px;
+}
+
+/* Navegación centrada */
+.nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--morado-oscuro);
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.nav ul li a:hover {
+    color: white;
+    background-color: var(--morado-principal);
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background: url('../img/side-view-gamer-playing-indoors.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 22px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Sección principal */
+.main-content {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.main-content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: var(--morado-oscuro);
+}
+
+.main-content p {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    min-width: 250px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(138, 43, 226, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 4px solid var(--morado-principal);
+}
+
+.image-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(138, 43, 226, 0.2);
+}
+
+.image-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid var(--morado-suave);
+}
+
+.image-info {
+    flex: 1;
+    text-align: center;
+}
+
+.image-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--morado-oscuro);
+}
+
+.image-info p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Estilos del footer */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: black;
+padding: 70px 0;
+width: 100%;
+color: white;
+}
+
+.footer .logo {
+    height: 100px;
+    width: auto;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--azul-primario);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #bbbbbb;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: var(--azul-oscuro);
+    background-color: white;
+}
+
+.footer-col .contacto-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col .contacto-links a i {
+    margin-right: 10px;
+    color: var(--azul-claro);
+    transition: all 0.5s ease;    
+}
+
+.footer-col .paginas-links a i {
+    margin-right: 10px;
+    color: var(--azul-claro);
+    transition: all 0.5s ease;    
+}
+
+.footer-col .contacto-links a {
+    text-decoration: none;
+    color: #bbbbbb;
+    margin: 0 10px 10px 0;
+}
+
+.footer-col .contacto-links a:hover {
+    color: white;
+}
+
+.footer-col .contacto-links a:hover i {
+    color: white;
+}
+
+/* Línea divisoria */
+.footer-bottom {
+    width: 85%;
+    height: 1px;
+    background: var(--morado-claro);
+    margin: 20px auto 0;
+    opacity: 0.3;
+}
+
+
+@media (max-width: 1200px) {
+    .image-box {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .image-box {
+        width: 100%;
+    }
+    
+    .nav ul {
+        gap: 15px;
+    }
+    
+    .hero h1 {
+        font-size: 32px;
+    }
+    
+    .hero p {
+        font-size: 18px;
+    }
+    
+    .footer-section {
+        margin-bottom: 25px;
+    }
+}
