@@ -10,7 +10,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="https://via.placeholder.com/60" alt="Logo">
+            <img src="{{ asset('storage/'. $userTecnology['logo']) }}" alt="Logo">
         </div>
         <nav class="nav">
             <ul>
@@ -25,8 +25,8 @@
     <!-- Sección de portada -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Avances Tecnológicos para un Mundo en Evolución</h1>
-            <p>Accede a formación especializada en línea para mejorar tus habilidades en el mundo del deporte. Aprende a tu ritmo y desde cualquier lugar.</p>
+            <h1>{{ $userTecnology['namewebsite']}}</h1>
+            <p>{{ $userTecnology['descriptionweb']}}</p>
             <!-- Botón eliminado según solicitud -->
         </div>
     </section>
@@ -34,38 +34,38 @@
     <!-- Sección de contenido -->
     <section class="main-content">
         <h2>Nuestros Servicios</h2>
-        <p>Descubre soluciones avanzadas y herramientas digitales que impulsan el futuro. La tecnología transforma nuestro entorno, creando nuevas oportunidades y posibilidades sin límites.</p>
+        <p>{{ $userTecnology['desc_imgs']}}</p>
 
         <div class="image-gallery">
             <div class="image-box">
-                <img src="https://via.placeholder.com/250" alt="Teclado Redragon">
+                <img src="{{ asset('storage/'. $userTecnology['img_one']) }}" alt="Teclado Redragon">
                 <div class="image-info">
                     <h3>Teclado Redragon Dark Avenger TKL Mecanico</h3>
-                    <p>Construcción: Plástico ABS reforzado con acabado texturizado en mate.</p>
+                    <p>{{ $userTecnology['desc_img_one']}}</p>
                 </div>
             </div>
 
             <div class="image-box">
-                <img src="https://via.placeholder.com/250" alt="Combo Trust GXT">
+                <img src="{{ asset('storage/'. $userTecnology['img_two']) }}" alt="Combo Trust GXT">
                 <div class="image-info">
                     <h3>Combo Trust GXT 794W 3 en 1 Teclado Mouse Padmouse</h3>
-                    <p>Tapete para mouse con superficie grumosa optimizada para obtener la máxima precisión y un control de deslizamiento</p>
+                    <p>{{ $userTecnology['desc_img_two']}}</p>
                 </div>
             </div>
 
             <div class="image-box">
-                <img src="https://via.placeholder.com/250" alt="Mouse Gamer">
+                <img src="{{ asset('storage/'. $userTecnology['img_three']) }}" alt="Mouse Gamer">
                 <div class="image-info">
                     <h3>Mouse Gamer Trust GXT </h3>
-                    <p>JUEGO SOSTENIBLE – El ratón Ybar es de un 69 % de material reciclado</p>
+                    <p>{{ $userTecnology['desc_img_three']}}</p>
                 </div>
             </div>
 
             <div class="image-box">
-                <img src="interior-shot-cafe-with-chairs-near-bar-with-wooden-tables.jpg" alt="GeForce RTX">
+                <img src="{{ asset('storage/'. $userTecnology['img_four']) }}" alt="GeForce RTX">
                 <div class="image-info">
                     <h3> GeForce RTX 5070 Ti INFINITY 16GB</h3>
-                    <p>La ZOTAC GAMING GeForce RTX™ 5070 Ti AMP Extreme INFINITY ofrece una experiencia de juego completamente renovada.</p>
+                    <p>{{ $userTecnology['desc_img_four']}}</p>
                 </div>
             </div>
         </div>
@@ -98,8 +98,8 @@
                     <h4>Contacto</h4>
                     <div class="contacto-links">
                         <ul>
-                            <li><a href="#"> <i class="fa-solid fa-phone"></i> 3126382</a></li>
-                            <li><a href="#"> <i class="fa-solid fa-envelope"></i> cacha@agmail.com</a></li>
+                            <li><a href="#"> <i class="fa-solid fa-phone"></i>{{ $userTecnology['boss']}}</a></li>
+                            <li><a href="#"> <i class="fa-solid fa-envelope"></i>{{ $userTecnology['email']}}</a></li>
                             <li><a href="#"> <i class="fa-solid fa-location-dot"></i> Cali Valle del Cauca</a> </li>
                         </ul>
                     </div>

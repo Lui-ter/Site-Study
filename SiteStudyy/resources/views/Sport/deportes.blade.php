@@ -12,7 +12,7 @@
 
     <header class="header">
         <div class="logo">
-            <img src="https://via.placeholder.com/150x50" alt="Logo">
+            <img src="{{ asset('storage/' . $usuarioDeporte['logo'])}}" alt="Logo">
         </div>
         <nav class="nav">
             <ul>
@@ -27,50 +27,50 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Capacitación para el Desarrollo Deportivo</h1>
-            <p>Accede a formación especializada en línea para mejorar tus habilidades en el mundo del deporte. Aprende a tu ritmo y desde cualquier lugar.</p>
+            <h1>{{ $usuarioDeporte['nombreweb'] }} </h1>
+            <p>{{ $usuarioDeporte['descripcionweb'] }}</p>
         </div>
     </section>
 
     <!-- Sección de contenido -->
     <section class="main-content">
         <h2>Nuestros Servicios</h2>
-        <p>Descubre nuestras opciones de capacitación diseñadas para potenciar tu desarrollo deportivo</p>
+        <p>{{ $usuarioDeporte['descripcionImg'] }}</p>
 
         <div class="image-grid">
             <!-- Tarjeta 1 -->
             <div class="image-card">
-                <img src="https://via.placeholder.com/400x250" alt="Entrenamiento Personalizado">
+                <img src="{{ asset('storage/' . $usuarioDeporte['imagen1']) }}" alt="Entrenamiento Personalizado">
                 <div class="card-content">
                     <h3>Entrenamiento Personalizado</h3>
-                    <p>Programas adaptados a tus necesidades específicas para maximizar tus resultados deportivos.</p>
+                    <p>{{ $usuarioDeporte['desImagen1'] }}</p>
                 </div>
             </div>
 
             <!-- Tarjeta 2 -->
             <div class="image-card">
-                <img src="https://via.placeholder.com/400x250" alt="Nutrición Deportiva">
+                <img src="{{ asset('storage/' . $usuarioDeporte['imagen2']) }}" alt="Nutrición Deportiva">
                 <div class="card-content">
                     <h3>Nutrición Deportiva</h3>
-                    <p>Asesoramiento nutricional especializado para mejorar tu rendimiento y recuperación.</p>
+                    <p>{{ $usuarioDeporte['desImagen2'] }}</p>
                 </div>
             </div>
 
             <!-- Tarjeta 3 -->
             <div class="image-card">
-                <img src="https://via.placeholder.com/400x250" alt="Preparación Física">
+                <img src="{{ asset('storage/' . $usuarioDeporte['imagen3']) }}" alt="Preparación Física">
                 <div class="card-content">
                     <h3>Preparación Física</h3>
-                    <p>Técnicas avanzadas para mejorar fuerza, resistencia y flexibilidad en cualquier disciplina.</p>
+                    <p>{{ $usuarioDeporte['desImagen3'] }}</p>
                 </div>
             </div>
 
             <!-- Tarjeta 4 -->
             <div class="image-card">
-                <img src="https://via.placeholder.com/400x250" alt="Psicología Deportiva">
+                <img src="{{ asset('storage/' . $usuarioDeporte['imagen4']) }}" alt="Psicología Deportiva">
                 <div class="card-content">
                     <h3>Psicología Deportiva</h3>
-                    <p>Técnicas mentales para manejar presión, mantener motivación y superar obstáculos.</p>
+                    <p>{{ $usuarioDeporte['desImagen4'] }}</p>
                 </div>
             </div>
         </div>
@@ -103,8 +103,8 @@
                     <h4>Contacto</h4>
                     <div class="contacto-links">
                         <ul>
-                            <li><a href="#"> <i class="fa-solid fa-phone"></i> 3126382</a></li>
-                            <li><a href="#"> <i class="fa-solid fa-envelope"></i> cacha@agmail.com</a></li>
+                            <li><a href="#"> <i class="fa-solid fa-phone"></i>{{ $usuarioDeporte['coach'] }}</a></li>
+                            <li><a href="#"> <i class="fa-solid fa-envelope"></i>{{ $usuarioDeporte['email']}}</a></li>
                             <li><a href="#"> <i class="fa-solid fa-location-dot"></i> Cali Valle del Cauca</a> </li>
                         </ul>
                     </div>

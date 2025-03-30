@@ -12,7 +12,7 @@
         <nav>
             <ul>
                 <li class="logo">
-                    <img src="img/LogoCACHA.png" alt="">
+                    <img src="img/Logo.png" alt="">
                 </li>
                 <li class="icons">
                     <a href=""><i class="fa-solid fa-bell"></i></a>
