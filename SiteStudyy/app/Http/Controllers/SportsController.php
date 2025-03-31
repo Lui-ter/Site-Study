@@ -13,7 +13,7 @@ class SportsController extends Controller
     public function AddDeporte(Request $request){
         $usuarioDeporte = [
             'nombreweb' => $request->input('webnombre'),
-            'descripcionweb' => $request->input('wedescripcion'),  
+            'descripcionweb' => $request->input('wedescripcion'),
             'tituloImagen1' => $request->input('tituloImagen1'),
             'imagen1' => $request->file('imagen1')->store('imagenes', 'public'),
             'desImagen1' => $request->input('desImagen1'),

@@ -14,15 +14,6 @@
                 <li class="logo">
                     <img src="img/Logo.png" alt="">
                 </li>
-                <li class="icons">
-                    <a href=""><i class="fa-solid fa-bell"></i></a>
-                    <div class="color">
-                            <a href=""><i class="fa-solid fa-sun"></i></a>
-                            <a href=""><i class="fa-solid fa-moon"></i></a>
-                    </div>
-                    <a href=""><i class="fa-solid fa-gear"></i></a>
-                    <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
-                </li>
             </ul>
         </nav>
     </header>
