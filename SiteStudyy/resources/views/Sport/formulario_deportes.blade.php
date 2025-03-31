@@ -68,8 +68,11 @@
 
                 <div class="form-column">
                     <div class="form-group">
-                        <label>describe the images</label>
-                        <textarea name="descripcionImg" placeholder="enter the description of each image"></textarea>
+                        <label>Enter image titles</label>
+                        <input type="text" placeholder="Title for first image"> <br>
+                        <input type="text" placeholder="Title for second image"> <br>
+                        <input type="text" placeholder="Title for third image"> <br>
+                        <input type="text" placeholder="Title for fourth image"> <br>
                     </div>
 
                     <div class="form-group">
