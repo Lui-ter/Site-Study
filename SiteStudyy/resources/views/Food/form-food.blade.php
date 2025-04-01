@@ -93,7 +93,19 @@
                     <div class="form-group">
                         <label>Products/Food Name</label>
                         <div class="form-group">
-                            <input type="text" name="food_name">
+                            <input type="text" placeholder="Title for first image" name="food_name">
+                            @error('food_name')
+                                <div class="error">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Title for second image" name="food_name_2">
+                            @error('food_name')
+                                <div class="error">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Title for third image" name="food_name_3">
                             @error('food_name')
                                 <div class="error">{{ $message }}</div>
                             @enderror

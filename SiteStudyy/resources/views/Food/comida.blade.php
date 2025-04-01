@@ -38,6 +38,7 @@
                 <img src="{{ asset('storage/' . $usuarioFood['imagen_3']) }}" alt="" class="img-food" width="300px">
                 <p class="image-title"><strong>{{ $usuarioFood['food_price'] }}</strong></p>
             </div>
+            <p class="image-title"><strong>{{ $usuarioFood['food_name'] }}</strong></p>
             <p class="image-title"><strong>{{ $usuarioFood['food_description'] }}</strong></p>
         </div>
         <div>
@@ -45,6 +46,7 @@
                 <img src="{{ asset('storage/' . $usuarioFood['imagen_4']) }}" alt="" class="img-food" width="300px">
                 <p class="image-title"><strong>{{ $usuarioFood['food_price'] }}</strong></p>
             </div>
+            <p class="image-title"><strong>{{ $usuarioFood['food_name_2'] }}</strong></p>
             <p class="image-title"><strong>{{ $usuarioFood['food_description_2'] }}</strong></p>
         </div>
         <div>
@@ -52,6 +54,7 @@
                 <img src="{{ asset('storage/' . $usuarioFood['imagen_5']) }}" alt="" class="img-food" width="300px">
                 <p class="image-title"><strong>{{ $usuarioFood['food_price'] }}</strong></p>
             </div>
+            <p class="image-title"><strong>{{ $usuarioFood['food_name_3'] }}</strong></p>
             <p class="image-title"><strong>{{ $usuarioFood['food_description_3'] }}</strong></p>
         </div>
     </div>
@@ -80,10 +83,10 @@
                     <h4>Otros</h4>
                     <div class="paginas-links">
                         <ul>
-                            <li><a href="#"> <i class="fa-solid fa-angle-right"></i> Inicio</a></li>
-                            <li><a href="#"> <i class="fa-solid fa-angle-right"></i> </a></li>
-                            <li><a href="#"> <i class="fa-solid fa-angle-right"></i> </a></li>
-                            <li><a href="#"> <i class="fa-solid fa-angle-right"></i> </a></li>
+                            <li><a href="#"> <i class="fa-solid fa-angle-right"></i>Inicio</a></li>
+                            <li><a href="#"> <i class="fa-solid fa-angle-right"></i>Menu</a></li>
+                            <li><a href="#"> <i class="fa-solid fa-angle-right"></i>Servicio</a></li>
+                            <li><a href="#"> <i class="fa-solid fa-angle-right"></i>Contacto</a></li>
                         </ul>
                     </div>
                 </div>
@@ -91,9 +94,10 @@
                     <h4>Contacto</h4>
                     <div class="contacto-links">
                         <ul>
-                            <li><a href="#"> <i class="fa-solid fa-phone"></i> </a></li>
-                            <li><a href="#"> <i class="fa-solid fa-envelope"></i> </a></li>
-                            <li><a href="#"> <i class="fa-solid fa-location-dot"></i> Cali</a> </li>
+                            <li><a href="https://github.com/Lui-ter/Site-Study.git"> <i class="fa-solid fa-phone">Luis</a></li>
+                            <li><a href="https://github.com/Lui-ter/Site-Study.git"> <i class="fa-solid fa-envelope">Kevin</a></li>
+                            <li><a href="https://github.com/Lui-ter/Site-Study.git"> <i class="fa-solid fa-location-dot">Sebastian</a> </li>
+                            <li><a href="https://github.com/Lui-ter/Site-Study.git"> <i class="fa-solid fa-location-dot">Naomi</a> </li>
                         </ul>
                     </div>
                 </div>

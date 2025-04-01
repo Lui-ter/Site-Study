@@ -23,6 +23,8 @@ class FoodController extends Controller
             'imagen_2' => $request->file('imagen_2')->store('img', 'public'),
             'product_description_2' => $request->input('product_description_2'),
             'food_name' => $request->input('food_name'),
+            'food_name_2' => $request->input('food_name_2'),
+            'food_name_3' => $request->input('food_name_3'),
             'food' => $request->input('food'),
             'food_price' => $request->input('food_price'),
             'imagen_3' => $request->file('imagen_3')->store('img', 'public'),
