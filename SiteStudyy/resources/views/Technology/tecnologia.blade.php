@@ -34,13 +34,12 @@
     <!-- Sección de contenido -->
     <section class="main-content">
         <h2>Nuestros Servicios</h2>
-        <p>{{ $userTecnology['desc_imgs']}}</p>
 
         <div class="image-gallery">
             <div class="image-box">
                 <img src="{{ asset('storage/'. $userTecnology['img_one']) }}" alt="Teclado Redragon">
                 <div class="image-info">
-                    <h3>Teclado Redragon Dark Avenger TKL Mecanico</h3>
+                    <h3>{{ $userTecnology['titleone']}}</h3>
                     <p>{{ $userTecnology['desc_img_one']}}</p>
                 </div>
             </div>
@@ -48,7 +47,7 @@
             <div class="image-box">
                 <img src="{{ asset('storage/'. $userTecnology['img_two']) }}" alt="Combo Trust GXT">
                 <div class="image-info">
-                    <h3>Combo Trust GXT 794W 3 en 1 Teclado Mouse Padmouse</h3>
+                    <h3>{{ $userTecnology['titletwo']}}</h3>
                     <p>{{ $userTecnology['desc_img_two']}}</p>
                 </div>
             </div>
@@ -56,7 +55,7 @@
             <div class="image-box">
                 <img src="{{ asset('storage/'. $userTecnology['img_three']) }}" alt="Mouse Gamer">
                 <div class="image-info">
-                    <h3>Mouse Gamer Trust GXT </h3>
+                    <h3>{{ $userTecnology['titlethree']}}</h3>
                     <p>{{ $userTecnology['desc_img_three']}}</p>
                 </div>
             </div>
@@ -64,7 +63,7 @@
             <div class="image-box">
                 <img src="{{ asset('storage/'. $userTecnology['img_four']) }}" alt="GeForce RTX">
                 <div class="image-info">
-                    <h3> GeForce RTX 5070 Ti INFINITY 16GB</h3>
+                    <h3>{{ $userTecnology['titlefour']}}</h3>
                     <p>{{ $userTecnology['desc_img_four']}}</p>
                 </div>
             </div>
