@@ -40,9 +40,9 @@
         <div class="image-grid">
             <!-- Tarjeta 1 -->
             <div class="image-card">
-                <img src="{{ asset('storage/' . $usuarioDeporte['imagen1']) }}" alt="Entrenamiento Personalizado">
+                <img src="{{ asset('storage/' . $usuarioDeporte['imagen2']) }}" alt="Entrenamiento Personalizado">
                 <div class="card-content">
-                    <h3>Entrenamiento Personalizado</h3>
+                    <h3>{{ $usuarioDeporte['tituloImagen1'] }}</h3>
                     <p>{{ $usuarioDeporte['desImagen1'] }}</p>
                 </div>
             </div>
@@ -51,7 +51,7 @@
             <div class="image-card">
                 <img src="{{ asset('storage/' . $usuarioDeporte['imagen2']) }}" alt="Nutrición Deportiva">
                 <div class="card-content">
-                    <h3>Nutrición Deportiva</h3>
+                    <h3>{{ $usuarioDeporte['tituloImagen2'] }}</h3>
                     <p>{{ $usuarioDeporte['desImagen2'] }}</p>
                 </div>
             </div>
@@ -60,7 +60,7 @@
             <div class="image-card">
                 <img src="{{ asset('storage/' . $usuarioDeporte['imagen3']) }}" alt="Preparación Física">
                 <div class="card-content">
-                    <h3>Preparación Física</h3>
+                    <h3>{{ $usuarioDeporte['tituloImagen3'] }}</h3>
                     <p>{{ $usuarioDeporte['desImagen3'] }}</p>
                 </div>
             </div>
@@ -69,7 +69,7 @@
             <div class="image-card">
                 <img src="{{ asset('storage/' . $usuarioDeporte['imagen4']) }}" alt="Psicología Deportiva">
                 <div class="card-content">
-                    <h3>Psicología Deportiva</h3>
+                    <h3>{{ $usuarioDeporte['tituloImagen4'] }}</h3>
                     <p>{{ $usuarioDeporte['desImagen4'] }}</p>
                 </div>
             </div>

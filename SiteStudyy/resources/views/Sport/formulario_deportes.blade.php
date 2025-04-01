@@ -69,10 +69,10 @@
                 <div class="form-column">
                     <div class="form-group">
                         <label>Enter image titles</label>
-                        <input type="text" placeholder="Title for first image"> <br>
-                        <input type="text" placeholder="Title for second image"> <br>
-                        <input type="text" placeholder="Title for third image"> <br>
-                        <input type="text" placeholder="Title for fourth image"> <br>
+                        <input type="text" placeholder="Title for first image" name="tituloImagen1"> <br>
+                        <input type="text" placeholder="Title for second image" name="tituloImagen2"> <br>
+                        <input type="text" placeholder="Title for third image" name="tituloImagen3"> <br>
+                        <input type="text" placeholder="Title for fourth image" name="tituloImagen4"> <br>
                     </div>
 
                     <div class="form-group">
