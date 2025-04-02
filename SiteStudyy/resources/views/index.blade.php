@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="card-food">
-                <h3>TECHNOLOGY</h3>
+                <h3>Tecnhology</h3>
                 <div class="img-card">
                     <img src="img/tech.jpg" alt="">
                 </div>

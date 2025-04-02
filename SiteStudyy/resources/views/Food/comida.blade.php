@@ -17,10 +17,10 @@
         </div>
         <nav class="nav">
             <ul>
-                <li><a href="{{ route('Form-Food') }}">Inicio</a></li>
+                <li><a href="{{ route('Form-Food') }}">beginning</a></li>
                 <li><a href="#">Menú</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -36,26 +36,28 @@
         <div>
             <div class="image-box" >
                 <img src="{{ asset('storage/' . $usuarioFood['imagen_3']) }}" alt="" class="img-food" width="300px">
+                <p class="image-title"><strong>{{ $usuarioFood['food_name'] }}</strong></p>
+                <p class="image-title"><strong>{{ $usuarioFood['food_description'] }}</strong></p>
                 <p class="image-title"><strong>{{ $usuarioFood['food_price'] }}</strong></p>
             </div>
-            <p class="image-title"><strong>{{ $usuarioFood['food_name'] }}</strong></p>
-            <p class="image-title"><strong>{{ $usuarioFood['food_description'] }}</strong></p>
+            {{-- <p class="image-title"><strong>{{ $usuarioFood['food_name'] }}</strong></p>
+            <p class="image-title"><strong>{{ $usuarioFood['food_description'] }}</strong></p> --}}
         </div>
         <div>
             <div class="image-box">
                 <img src="{{ asset('storage/' . $usuarioFood['imagen_4']) }}" alt="" class="img-food" width="300px">
+                <p class="image-title"><strong>{{ $usuarioFood['food_name_2'] }}</strong></p>
+                <p class="image-title"><strong>{{ $usuarioFood['food_description_2'] }}</strong></p>
                 <p class="image-title"><strong>{{ $usuarioFood['food_price'] }}</strong></p>
             </div>
-            <p class="image-title"><strong>{{ $usuarioFood['food_name_2'] }}</strong></p>
-            <p class="image-title"><strong>{{ $usuarioFood['food_description_2'] }}</strong></p>
         </div>
         <div>
             <div class="image-box" >
                 <img src="{{ asset('storage/' . $usuarioFood['imagen_5']) }}" alt="" class="img-food" width="300px">
+                <p class="image-title"><strong>{{ $usuarioFood['food_name_3'] }}</strong></p>
+                <p class="image-title"><strong>{{ $usuarioFood['food_description_3'] }}</strong></p>
                 <p class="image-title"><strong>{{ $usuarioFood['food_price'] }}</strong></p>
             </div>
-            <p class="image-title"><strong>{{ $usuarioFood['food_name_3'] }}</strong></p>
-            <p class="image-title"><strong>{{ $usuarioFood['food_description_3'] }}</strong></p>
         </div>
     </div>
 

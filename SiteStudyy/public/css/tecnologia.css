@@ -52,7 +52,7 @@
     text-decoration: none;
     color: var(--morado-oscuro);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     transition: color 0.3s;
     padding: 5px 10px;
     border-radius: 4px;
@@ -83,7 +83,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
@@ -94,13 +94,13 @@
 }
 
 .hero h1 {
-    font-size: 42px;
+    font-size: 55px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
-    font-size: 22px;
+    font-size: 30px;
     margin-top: 10px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -113,13 +113,13 @@
 }
 
 .main-content h2 {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 10px;
     color: var(--morado-oscuro);
 }
 
 .main-content p {
-    font-size: 18px;
+    font-size: 22px;
     color: #666;
     max-width: 800px;
     margin: 0 auto 30px;
@@ -167,13 +167,13 @@
 }
 
 .image-info h3 {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 10px;
     color: var(--morado-oscuro);
 }
 
 .image-info p {
-    font-size: 14px;
+    font-size: 25px;
     color: #666;
     line-height: 1.5;
 }
@@ -210,7 +210,7 @@ color: white;
 }
 
 .footer-col h4 {
-    font-size: 18px;
+    font-size: 24px;
     color: white;
     text-transform: capitalize;
     margin-bottom: 35px;
@@ -234,7 +234,7 @@ color: white;
 }
 
 .footer-col ul li a {
-    font-size: 16px;
+    font-size: 22px;
     text-transform: capitalize;
     color: #bbbbbb;
     text-decoration: none;
@@ -274,13 +274,13 @@ color: white;
 .footer-col .contacto-links a i {
     margin-right: 10px;
     color: var(--azul-claro);
-    transition: all 0.5s ease;    
+    transition: all 0.5s ease;
 }
 
 .footer-col .paginas-links a i {
     margin-right: 10px;
     color: var(--azul-claro);
-    transition: all 0.5s ease;    
+    transition: all 0.5s ease;
 }
 
 .footer-col .contacto-links a {
@@ -317,28 +317,28 @@ color: white;
     .header {
         padding: 15px 20px;
     }
-    
+
     .footer-container {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .image-box {
         width: 100%;
     }
-    
+
     .nav ul {
         gap: 15px;
     }
-    
+
     .hero h1 {
         font-size: 32px;
     }
-    
+
     .hero p {
         font-size: 18px;
     }
-    
+
     .footer-section {
         margin-bottom: 25px;
     }
